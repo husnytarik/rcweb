@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roastery Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">
+          <div class="logo-text">
+            <span class="brand-name">ROASTERY CLUB</span>
+            <span class="brand-sub"> COLLECTIVE • SPECIALTY • PERFECTION </span>
+          </div>
+        </a>
+        <nav class="nav-menu">
+          <a href="#hero">Ana Sayfa</a>
+          <a href="#about">Hakkımızda</a>
+          <a href="#products">Ürünlerimiz</a>
+          <a href="#gallery">Galeri</a>
+          <a href="#contact">İletişim</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+      <div class="video-overlay"></div>
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="assets/videos/hero-bg.mp4" type="video/mp4" />
+        Tarayıcınız video etiketini desteklemiyor.
+      </video>
+      <div class="hero-content container">
+        <div class="hero-logo">
+          <img src="assets/images/logo.png" alt="Roastery Club Logo" />
+        </div>
+        <div class="hero-motto">
+          <span>COLLECTIVE</span>
+          <span class="dot"></span>
+          <span>SPECIALTY</span>
+          <span class="dot"></span>
+          <span>PERFECTION</span>
+        </div>
+
+        <a href="#products" class="btn btn-primary">Keşfet</a>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-wrapper">
+          <div class="about-text">
+            <span class="about-subtitle">HİKAYEMİZ</span>
+            <h2>Nitelikli Kahvenin <br />Tutku Dolu Yolculuğu</h2>
+
+            <p>
+              Roastery Club olarak, dünyanın en seçkin kahve çiftliklerinden
+              gelen nitelikli çekirdekleri özenle seçiyor ve her birinin kendine
+              has aromasını ortaya çıkaracak özel kavurma profilleriyle
+              işliyoruz.
+            </p>
+
+            <p>
+              Amacımız, sadece bir fincan kahve sunmak değil; çekirdeğin
+              topraktan fincana olan serüvenine saygı duyarak her yudumda
+              kusursuz bir deneyim yaşatmaktır.
+            </p>
+
+            <div class="about-features">
+              <div class="feature-item">
+                <span class="feature-number">12+</span>
+                <span class="feature-label">Tek Köken Çekirdek</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-number">%100</span>
+                <span class="feature-label">Specialty Ayarı</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-number">Orijinal</span>
+                <span class="feature-label">Kavrum Profili</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image">
+            <img src="assets/images/about-img.jpg" alt="Roastery Club Atölye" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products-section">
+      <div class="container products-relative-container">
+        <h2 class="section-title">Öne Çıkan Ürünlerimiz</h2>
+
+        <button
+          class="prod-slider-btn prod-prev-btn"
+          aria-label="Önceki Ürünler"
+        >
+          ❮
+        </button>
+        <button
+          class="prod-slider-btn prod-next-btn"
+          aria-label="Sonraki Ürünler"
+        >
+          ❯
+        </button>
+
+        <div class="products-slider-container">
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="assets/images/p1.avif" alt="Into The Void" />
+              </div>
+              <div class="product-details">
+                <span class="product-origin">HONDURAS</span>
+                <h3 class="product-title">Into The Void</h3>
+                <div class="product-ratings">
+                  <div class="rating-item">
+                    <span>TATLIQLIK</span><span class="rating-value">•••</span>
+                  </div>
+                  <div class="rating-item">
+                    <span>ASİDİTE</span><span class="rating-value">••</span>
+                  </div>
+                  <div class="rating-item">
+                    <span>GÖVDE</span><span class="rating-value">••••</span>
+                  </div>
+                </div>
+                <p class="product-notes">
+                  <strong>Tadım Notları:</strong> Pişmiş Orman Meyveleri, Sıcak
+                  Şarap, Kakao
+                </p>
+                <div class="roast-container">
+                  <div class="roast-bar-bg">
+                    <div class="roast-bar-fill" style="width: 80%"></div>
+                  </div>
+                  <span class="roast-text">Koyu Kavrum</span>
+                </div>
+                <div class="product-footer">
+                  <span class="product-price">360 TL</span
+                  ><button class="btn-detail">İncele</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="assets/images/p2.avif" alt="Yirgacheffe" />
+              </div>
+              <div class="product-details">
+                <span class="product-origin">ETIOPYA</span>
+                <h3 class="product-title">Yirgacheffe Kochere</h3>
+                <div class="product-ratings">
+                  <div class="rating-item">
+                    <span>TATLIQLIK</span><span class="rating-value">••••</span>
+                  </div>
+                  <div class="rating-item">
+                    <span>ASİDİTE</span><span class="rating-value">••••</span>
+                  </div>
+                  <div class="rating-item">
+                    <span>GÖVDE</span><span class="rating-value">••</span>
+                  </div>
+                </div>
+                <p class="product-notes">
+                  <strong>Tadım Notları:</strong> Bergamot, Melisa, Limon
+                  Kabuğu, Esmer Şeker
+                </p>
+                <div class="roast-container">
+                  <div class="roast-bar-bg">
+                    <div class="roast-bar-fill" style="width: 45%"></div>
+                  </div>
+                  <span class="roast-text">Orta Kavrum</span>
+                </div>
+                <div class="product-footer">
+                  <span class="product-price">390 TL</span
+                  ><button class="btn-detail">İncele</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="assets/images/p3.avif" alt="San Alberto" />
+              </div>
+              <div class="product-details">
+                <span class="product-origin">KOLOMBİYA</span>
+                <h3 class="product-title">San Alberto Supremo</h3>
+                <div class="product-ratings">
+                  <div class="rating-item">
+                    <span>TATLIQLIK</span><span class="rating-value">••••</span>
+                  </div>
+                  <div class="rating-item">
+                    <span>ASİDİTE</span><span class="rating-value">•••</span>
+                  </div>
+                  <div class="rating-item">
+                    <span>GÖVDE</span><span class="rating-value">•••</span>
+                  </div>
+                </div>
+                <p class="product-notes">
+                  <strong>Tadım Notları:</strong> Sütlü Çikolata, Karamel,
+                  Kavrulmuş Fındık
+                </p>
+                <div class="roast-container">
+                  <div class="roast-bar-bg">
+                    <div class="roast-bar-fill" style="width: 55%"></div>
+                  </div>
+                  <span class="roast-text">Orta Kavrum</span>
+                </div>
+                <div class="product-footer">
+                  <span class="product-price">375 TL</span
+                  ><button class="btn-detail">İncele</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="assets/images/p4.jpg" alt="Guatemala" />
+              </div>
+              <div class="product-details">
+                <span class="product-origin">GUATEMALA</span>
+                <h3 class="product-title">Antigua Pastoral</h3>
+                <div class="product-ratings">
+                  <div class="rating-item">
+                    <span>TATLIQLIK</span><span class="rating-value">•••</span>
+                  </div>
+                  <div class="rating-item">
+                    <span>ASİDİTE</span><span class="rating-value">•••</span>
+                  </div>
+                  <div class="rating-item">
+                    <span>GÖVDE</span><span class="rating-value">••••</span>
+                  </div>
+                </div>
+                <p class="product-notes">
+                  <strong>Tadım Notları:</strong> İsli Çikolata, Akçaağaç,
+                  Baharat Notaları
+                </p>
+                <div class="roast-container">
+                  <div class="roast-bar-bg">
+                    <div class="roast-bar-fill" style="width: 70%"></div>
+                  </div>
+                  <span class="roast-text">Orta-Koyu Kavrum</span>
+                </div>
+                <div class="product-footer">
+                  <span class="product-price">365 TL</span
+                  ><button class="btn-detail">İncele</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="assets/images/p5.jpg" alt="Santos" />
+              </div>
+              <div class="product-details">
+                <span class="product-origin">BREZİLYA</span>
+                <h3 class="product-title">Brazil Santos</h3>
+                <div class="product-ratings">
+                  <div class="rating-item">
+                    <span>TATLIQLIK</span><span class="rating-value">••••</span>
+                  </div>
+                  <div class="rating-item">
+                    <span>ASİDİTE</span><span class="rating-value">•</span>
+                  </div>
+                  <div class="rating-item">
+                    <span>GÖVDE</span><span class="rating-value">•••</span>
+                  </div>
+                </div>
+                <p class="product-notes">
+                  <strong>Tadım Notları:</strong> Fındık Ezmesi, Kakao Sütü,
+                  Düşük Asidite
+                </p>
+                <div class="roast-container">
+                  <div class="roast-bar-bg">
+                    <div class="roast-bar-fill" style="width: 60%"></div>
+                  </div>
+                  <span class="roast-text">Orta Kavrum</span>
+                </div>
+                <div class="product-footer">
+                  <span class="product-price">330 TL</span
+                  ><button class="btn-detail">İncele</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="assets/images/p6.jpg" alt="Kenya" />
+              </div>
+              <div class="product-details">
+                <span class="product-origin">KENYA</span>
+                <h3 class="product-title">Kenya AA Nyeri</h3>
+                <div class="product-ratings">
+                  <div class="rating-item">
+                    <span>TATLIQLIK</span><span class="rating-value">•••</span>
+                  </div>
+                  <div class="rating-item">
+                    <span>ASİDİTE</span><span class="rating-value">•••••</span>
+                  </div>
+                  <div class="rating-item">
+                    <span>GÖVDE</span><span class="rating-value">•••</span>
+                  </div>
+                </div>
+                <p class="product-notes">
+                  <strong>Tadım Notları:</strong> Siyah Frenk Üzümü, Greyfurt,
+                  Şaraplık Gövde
+                </p>
+                <div class="roast-container">
+                  <div class="roast-bar-bg">
+                    <div class="roast-bar-fill" style="width: 40%"></div>
+                  </div>
+                  <span class="roast-text">Hafif Kavrum</span>
+                </div>
+                <div class="product-footer">
+                  <span class="product-price">410 TL</span
+                  ><button class="btn-detail">İncele</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="showcase" class="showcase-section container">
+      <div class="showcase-header">
+        <span class="showcase-subtitle">ROASTERY CLUB GURURLA SUNAR</span>
+        <h2>Atölye Koleksiyonu</h2>
+        <p>
+          Kahve deneyiminizi mükemmelleştirecek özel tasarım yan ürünlerimiz ve
+          premium ekipmanlarımız.
+        </p>
+      </div>
+
+      <div class="showcase-collage">
+        <div class="collage-item large-vertical">
+          <div class="collage-img-wrapper">
+            <img src="assets/images/merch-hoodie.jpg" alt="Roastery Hoodie" />
+            <span class="collage-tag">SINIRLI SAYIDA</span>
+          </div>
+          <div class="collage-content">
+            <h3>Roastery Club Hoodie</h3>
+            <p>
+              %100 organik pamuktan üretilen, atölye ruhunu sokağa taşıyan özel
+              kesim oversize sweatshirt.
+            </p>
+            <div class="collage-footer">
+              <span class="collage-price">1.250 TL</span>
+              <button class="btn-collage-detail">İncele</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="collage-item">
+          <div class="collage-img-wrapper">
+            <img src="assets/images/ceramic-mug.jpg" alt="Seramik Kupa" />
+          </div>
+          <div class="collage-content">
+            <h3>Handcrafted Seramik Kupa</h3>
+            <p>
+              Elde şekillendirilen, ısıyı uzun süre koruyan mat bitişli tasarım
+              kupa.
+            </p>
+            <div class="collage-footer">
+              <span class="collage-price">420 TL</span>
+              <button class="btn-collage-detail">İncele</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="collage-item">
+          <div class="collage-img-wrapper">
+            <img src="assets/images/v60-kit.jpg" alt="Dripper Set" />
+          </div>
+          <div class="collage-content">
+            <h3>Origami V60 Demleme Seti</h3>
+            <p>
+              Mükemmel asidite ve gövde dengesi yakalamanız için tasarlanmış
+              porselen dripper.
+            </p>
+            <div class="collage-footer">
+              <span class="collage-price">850 TL</span>
+              <button class="btn-collage-detail">İncele</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="collage-item wide-horizontal">
+          <div class="collage-img-wrapper">
+            <img src="assets/images/coffee-grinder.jpg" alt="El Değirmeni" />
+            <span class="collage-tag">PROFESYONEL</span>
+          </div>
+          <div class="collage-content">
+            <h3>Premium Paslanmaz El Değirmeni</h3>
+            <p>
+              40 farklı öğütme kademesine sahip, titanyum burr mekanizmalı, her
+              yerde taze kahve öğütmek isteyen profesyoneller için.
+            </p>
+            <div class="collage-footer">
+              <span class="collage-price">3.400 TL</span>
+              <button class="btn-collage-detail">İncele</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-section container">
+      <div class="gallery-header">
+        <span class="gallery-subtitle">ATÖLYEMİZDEN KARELER</span>
+        <h2 class="section-title">Roastery Atmosferi</h2>
+        <p class="gallery-desc">
+          Kahvenin tutku dolu serüvenine, kavurma atölyemizin sıcaklığına ve her
+          detayda saklı mükemmeliyetçiliğe göz atın.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item large">
+          <img src="assets/images/g1.jpg" alt="Roastery Club Galeri 1" />
+          <div class="gallery-overlay">
+            <div class="overlay-content">
+              <span>01</span>
+              <h3>Nitelikli Kavrum</h3>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/g2.jpg" alt="Roastery Club Galeri 2" />
+          <div class="gallery-overlay">
+            <div class="overlay-content">
+              <span>02</span>
+              <h3>Özenli Seçim</h3>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/g3.jpg" alt="Roastery Club Galeri 3" />
+          <div class="gallery-overlay">
+            <div class="overlay-content">
+              <span>03</span>
+              <h3>Kusursuz Deneyim</h3>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item wide">
+          <img src="assets/images/g4.jpg" alt="Roastery Club Galeri 4" />
+          <div class="gallery-overlay">
+            <div class="overlay-content">
+              <span>04</span>
+              <h3>Atölye Ruhu</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-form-wrapper">
+            <h2>Bizimle İletişime Geçin</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Adınız</label>
+                <input
+                  type="text"
+                  id="name"
+                  required
+                  placeholder="Adınızı giriniz"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefon</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  required
+                  placeholder="Telefon numaranız"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Mesajınız</label>
+                <textarea
+                  id="message"
+                  rows="5"
+                  required
+                  placeholder="Mesajınızı buraya yazın..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Gönder</button>
+            </form>
+          </div>
+
+          <div class="contact-info-wrapper">
+            <a href="tel:+90 533 590 51 96" class="info-card">
+              <div class="info-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+              </div>
+              <div class="info-text">
+                <span class="info-label">TELEFON</span>
+                <span class="info-value" style="font-size: 14px"
+                  >+90 533 590 51 96</span
+                >
+              </div>
+            </a>
+
+            <a href="mailto:bilgi@roasteryclub.com" class="info-card">
+              <div class="info-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div class="info-text">
+                <span class="info-label">E-POSTA</span>
+                <span class="info-value" style="font-size: 14px"
+                  >bilgi@roasteryclub.com</span
+                >
+              </div>
+            </a>
+
+            <a
+              href="https://maps.app.goo.gl/t2273DBmkyh9pzDj6"
+              target="_blank"
+              class="info-card"
+            >
+              <div class="info-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div class="info-text">
+                <span class="info-label">ADRES</span>
+                <span class="info-value" style="font-size: 14px"
+                  >Gaziler Mahallesi Antalya Esnaflar Küçük Sanayi Sitesi 250
+                  Sokak No:2/E, Antalya, Turkey 07220</span
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="artisticMap"></div>
+
+    <footer class="main-footer">
+      <div class="container footer-content">
+        <p>&copy; 2026 Roastery Club. Tüm Hakları Saklıdır.</p>
+        <p>
+          Design by
+          <a
+            href="mailto:info@kavruk.design"
+            style="color: var(--primary-color)"
+            >kavruk.design</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
