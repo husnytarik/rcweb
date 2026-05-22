@@ -71,7 +71,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Haritaya işareti ekleme
-  L.marker([lat, lng], { icon: customIcon }).addTo(map).openPopup();
+  L.marker([lat, lng], { icon: customIcon })
+    .addTo(map)
+    .on("click", () => {
+      window.open("https://maps.google.com/?q=36.8615,30.6378", "_blank");
+    });
 
   // --- FORM SUBMIT (Simülasyon) ---
   const form = document.getElementById("contactForm");
